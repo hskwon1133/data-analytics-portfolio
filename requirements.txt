@@ -1,0 +1,6 @@
+dbt-core==1.12.7
+dbt-bigquery==1.12.4
+google-cloud-bigquery==3.47.0
+pandas==3.1.1
+scipy==1.18.1
+jupyter==1.1.1

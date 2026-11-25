@@ -1,0 +1,38 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# dbt 산출물
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# 인증 / 접속 정보 (저장소에 올리지 않음)
+.env
+.env.*
+profiles.yml
+*credentials*.json
+*service_account*.json
+*service-account*.json
+*keyfile*.json
+application_default_credentials.json
+.claude/settings.local.json
+
+# 외부 원본 데이터 (README에 받는 방법만 기록)
+analysis/**/data/
+data/
+*.csv
+*.parquet
+*.zip
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

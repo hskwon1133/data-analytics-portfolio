@@ -1,0 +1,22 @@
+name: user_behavior_analytics
+version: "0.1.0"
+config-version: 2
+
+# 접속 정보는 저장소 밖 ~/.dbt/profiles.yml 의 같은 이름 프로필에 있음
+profile: user_behavior_analytics
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  user_behavior_analytics:
+    # 기본 데이터셋(uba_dev) 뒤에 붙어 uba_dev_staging / uba_dev_marts 로 생성됨
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
