@@ -18,6 +18,7 @@
 
 ## 환경
 - Python 가상환경: `.venv` (Python 3.13). 패키지 버전은 `requirements.txt`.
-- dbt 프로젝트: `dbt/` (모델은 `models/staging`, `models/marts`). 접속 정보는 저장소 밖 `~/.dbt/profiles.yml`의 `user_behavior_analytics` 프로필.
+- dbt 프로젝트: `user_behavior_analytics/` (모델은 `models/staging`, `models/marts`). 접속 정보는 저장소 밖 `~/.dbt/profiles.yml`의 `user_behavior_analytics` 프로필.
 - BigQuery 데이터셋은 `uba_` 접두사(`uba_dev`, `uba_dev_staging`, `uba_dev_marts`)로 기존 프로젝트 데이터셋과 분리한다.
-- A/B 테스트 분석: `analysis/ab_test_cookie_cats/` (원본 데이터는 그 아래 `data/`, gitignore 처리).
+- A/B 테스트 분석: `ab_testing/` (노트북은 `notebook/`, 원본 데이터는 `data/`, gitignore 처리).
+- 매출 KPI 파이프라인: `sales_kpi_pipeline/` (예정).

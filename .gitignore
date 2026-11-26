@@ -5,9 +5,9 @@ __pycache__/
 .ipynb_checkpoints/
 
 # dbt 산출물
-dbt/target/
-dbt/dbt_packages/
-dbt/logs/
+user_behavior_analytics/target/
+user_behavior_analytics/dbt_packages/
+user_behavior_analytics/logs/
 target/
 dbt_packages/
 logs/
@@ -25,7 +25,7 @@ application_default_credentials.json
 .claude/settings.local.json
 
 # 외부 원본 데이터 (README에 받는 방법만 기록)
-analysis/**/data/
+ab_testing/data/
 data/
 *.csv
 *.parquet
